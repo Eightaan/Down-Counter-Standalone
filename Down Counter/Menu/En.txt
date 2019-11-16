@@ -1,0 +1,8 @@
+{
+	"Downcount_menu_hud_title" : "Down Counter Options"
+	"Downcount_menu_hud_desc" : "Configure the down count options."
+	"player_down_toggle_title" : "Show player down counter"
+	"player_down_toggle_desc" : "Display your own down counter in the hud."
+	"team_down_toggle_title" : "Show teammate down counter"
+	"team_down_toggle_desc" : "Display down counter in the hud for teammates."
+}

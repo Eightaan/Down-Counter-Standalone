@@ -1,0 +1,26 @@
+{
+	"menu_id": "Downcount_menu_hud",
+	"parent_menu_id": "blt_options",
+	"title": "Downcount_menu_hud_title",
+	"description": "Downcount_menu_hud_desc",
+	"items": [
+		{
+			"type" : "toggle",
+			"id" : "player_down_toggle",
+			"title" : "player_down_toggle_title",
+			"description" : "player_down_toggle_desc",
+			"callback": "callback_PLAYER_down",
+			"value": "PLAYER_down",
+			"default_value": false
+		},
+		{
+			"type" : "toggle",
+			"id" : "team_down_toggle",
+			"title" : "team_down_toggle_title",
+			"description" : "team_down_toggle_desc",
+			"callback": "callback_TEAM_down",
+			"value": "TEAM_down",
+			"default_value": false
+		}
+	]
+}
