@@ -1,5 +1,5 @@
 
-	local init_original = HUDManager.init
+    local init_original = HUDManager.init
     local set_mugshot_downed_original = HUDManager.set_mugshot_downed
     local set_mugshot_custody_original = HUDManager.set_mugshot_custody
     local set_mugshot_normal_original = HUDManager.set_mugshot_normal
