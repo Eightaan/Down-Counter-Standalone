@@ -1,7 +1,5 @@
-
     local init_original = HUDTeammate.init
     local set_health_original = HUDTeammate.set_health
-    local set_name_original = HUDTeammate.set_name
  
     function HUDTeammate:init(...)
         init_original(self, ...)
@@ -9,7 +7,7 @@
     end
 	
     function HUDTeammate:_init_revivecount()
-		self._setting_prefix = self._main_player and "PLAYER_" or "TEAM_"
+	self._setting_prefix = self._main_player and "PLAYER_" or "TEAM_"
         self._revives_counter = self._player_panel:child("radial_health_panel"):text({
             name = "revives_counter",
             visible = not managers.groupai:state():whisper_mode(),
@@ -70,15 +68,4 @@
     function HUDTeammate:set_player_in_custody(incustody)
         self._is_in_custody = incustody
         self:set_revive_visibility(not incustody)
-    end
-
-    function HUDTeammate:set_name(teammate_name, ...)
-        if teammate_name ~= self._name then
-            self._name = teammate_name
-            self:reset_revives()
-        end
-		
-        local name_panel = self._panel:child("name")
-        name_panel:set_text(teammate_name)
-        set_name_original(self, name_panel:text(), ...)
     end
